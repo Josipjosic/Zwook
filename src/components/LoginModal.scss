@@ -1,0 +1,119 @@
+.modal-container {
+  background-color: #252a33;
+  width: 474px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #9aa3b2;
+
+  .modal-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    img {
+      width: 52px;
+      height: 52px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.modal-title {
+  color: #eef2f6;
+  font-size: 32px;
+  font-weight: 1000;
+  margin-left: 5px;
+}
+.modal-welcome {
+  margin-top: -10px;
+  h2 {
+    color: #eef2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  p {
+    color: #9aa3b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+    a {
+      margin-left: 5px;
+      text-decoration: none;
+      color: #eef2f6;
+    }
+    a:hover {
+      color: #EFCC44;
+    }
+  }
+}
+
+.modal-form {
+  margin: 23px 30px 10px 30px;
+  display: flex;
+  border: 1px solid #9aa3b2;
+  border-radius: 10px;
+  align-items: center;
+
+  .form-logo {
+    padding-left: 10px;
+    padding-top: 2px;
+  }
+}
+
+.modal-button-login button{
+  margin: 30px 30px 10px 30px;
+  display: flex;
+  width: 87.5%;
+  height: 50px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFCC44;
+  font-size: 15px;
+  cursor: pointer;
+}
+.modal-button-login button:hover {
+  background-color: #9aa3b2;
+  color: #eef2f6;
+}
+.modal-separator {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  p {
+    color: #9aa3b2;
+  }
+  .modal-barrier {
+    width: 35%;
+    padding-bottom: 0%;
+    border-bottom: 1px solid #4A4D55;
+  }
+}
+
+.modal-button-auth {
+  margin: 30px 30px 10px 30px;
+  display: flex;
+  border: 1px solid #9aa3b2;
+  border-radius: 10px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  button {
+    background-color: #252a33;
+    border: none;
+    color: #eef2f6;
+    font-size: 15px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+}
