@@ -48,7 +48,7 @@
       color: #eef2f6;
     }
     a:hover {
-      color: #EFCC44;
+      color: #efcc44;
     }
   }
 }
@@ -66,7 +66,7 @@
   }
 }
 
-.modal-button-login button{
+.modal-button-login {
   margin: 30px 30px 10px 30px;
   display: flex;
   width: 87.5%;
@@ -74,14 +74,19 @@
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  background-color: #EFCC44;
+  background-color: #efcc44;
   font-size: 15px;
   cursor: pointer;
 }
-.modal-button-login button:hover {
-  background-color: #9aa3b2;
+.modal-button-login:hover {
+  background-color: #4a4d55;
   color: #eef2f6;
+  .button-login {
+    color: #eef2f6;
+    position: fixed;
+  }
 }
+
 .modal-separator {
   display: flex;
   justify-content: space-evenly;
@@ -93,7 +98,7 @@
   .modal-barrier {
     width: 35%;
     padding-bottom: 0%;
-    border-bottom: 1px solid #4A4D55;
+    border-bottom: 1px solid #4a4d55;
   }
 }
 
@@ -106,14 +111,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
-  button {
+  .button-auth {
     background-color: #252a33;
     border: none;
     color: #eef2f6;
+    margin-left: 5px;
     font-size: 15px;
-  }
-  button:hover {
-    cursor: pointer;
   }
 }

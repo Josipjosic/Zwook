@@ -2,12 +2,14 @@ import React from "react";
 import "./LoginModal.scss";
 import image from "../assets/images/Logo Shape.png";
 import Input from "./Input";
+import { Link } from "react-router-dom";
 import { MdOutlineMail } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { MdLockOutline } from "react-icons/md";
 import { SlSocialGoogle } from "react-icons/sl";
 
-function LoginModal(props) {
+function LoginModal() {
+  
   var placeholder1 = "Email Address";
   var placeholder2 = "Password";
 
@@ -41,9 +43,13 @@ function LoginModal(props) {
         </IconContext.Provider>
         <Input placeholder={placeholder2} />
       </div>
-      <div className="modal-button-login">
-        <button>Login</button>
-      </div>
+      <Link
+        to="/dashboard"
+        className="modal-button-login"
+        style={{ textDecoration: "none" }}
+      >
+        Login
+      </Link>
       <div className="modal-separator">
         <div className="modal-barrier"></div>
         <div className="modal-or">
@@ -52,12 +58,20 @@ function LoginModal(props) {
         <div className="modal-barrier"></div>
       </div>
       <div className="modal-button-auth">
-        <IconContext.Provider value={{className:"google-button", color: "#9aa3b2", size: "22px"}}>
+        <IconContext.Provider
+          value={{
+            className: "google-button",
+            color: "#9aa3b2",
+            size: "22px",
+          }}
+        >
           <div>
-          <SlSocialGoogle />
+            <SlSocialGoogle />
           </div>
         </IconContext.Provider>
-        <button>Authorize with Google</button>
+        <Link to="/" className="button-auth" style={{ textDecoration: "none" }}>
+          Authorize with Google
+        </Link>
       </div>
     </div>
   );
