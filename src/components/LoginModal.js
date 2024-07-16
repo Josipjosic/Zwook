@@ -27,22 +27,22 @@ function LoginModal() {
           Don't have an account yet? <a href="localhost300">Sign Up</a>
         </p>
       </div>
-      <div className="modal-form">
+      <form className="modal-form">
         <IconContext.Provider value={{ color: "#9aa3b2", size: "25px" }}>
           <div className="form-logo">
             <MdOutlineMail />
           </div>
         </IconContext.Provider>
         <Input placeholder={placeholder1} />
-      </div>
-      <div className="modal-form">
+      </form>
+      <form className="modal-form">
         <IconContext.Provider value={{ color: "#9aa3b2", size: "25px" }}>
           <div className="form-logo">
             <MdLockOutline />
           </div>
         </IconContext.Provider>
         <Input placeholder={placeholder2} />
-      </div>
+      </form>
       <Link
         to="/dashboard"
         className="modal-button-login"
@@ -57,7 +57,7 @@ function LoginModal() {
         </div>
         <div className="modal-barrier"></div>
       </div>
-      <div className="modal-button-auth">
+      <footer className="modal-button-auth">
         <IconContext.Provider
           value={{
             className: "google-button",
@@ -72,7 +72,7 @@ function LoginModal() {
         <Link to="/" className="button-auth" style={{ textDecoration: "none" }}>
           Authorize with Google
         </Link>
-      </div>
+      </footer>
     </div>
   );
 }
