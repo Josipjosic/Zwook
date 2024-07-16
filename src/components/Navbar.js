@@ -3,7 +3,7 @@ import image from "../assets/images/Logo Shape.png";
 import imageArtist from "../assets/images/Vector.png";
 import imageStation from "../assets/images/station.png";
 import imagePremium from "../assets/images/Empty State Icon.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { LuLaptop } from "react-icons/lu";
 import { AiOutlineThunderbolt } from "react-icons/ai";
@@ -14,11 +14,10 @@ import { GiOldMicrophone } from "react-icons/gi";
 
 function Navbar() {
 
-  const homeUrl = useLocation().pathname;
-  const pathname = homeUrl.pathname
+  const location = useLocation()
 
+  const currentRoute = location.pathname.toLowerCase();
 
-  console.log(homeUrl)
 
   return (
     <div className="navbar-main">
@@ -28,44 +27,44 @@ function Navbar() {
       </header>
       <div className="navbar-content">
         <nav className="navbar-list">
-          <Link to="" style={{ textDecoration: "none" }} >
+          <Link to="/dashboard" style={{ textDecoration: "none" }} className={currentRoute.includes("dashboard") ? "navbar list a active " : "navbar list item"} >
             <li className="navbar-list-item" >
               <AiOutlineHome className="navbar-list-logo" />
               Home
             </li>
           </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/devices" style={{ textDecoration: "none"  }} className={currentRoute.includes("devices") ? "navbar list a active " : "navbar list item"}>
             <li className="navbar-list-item">
               <LuLaptop className="navbar-list-logo" />
               Devices
             </li>
             <li className="navbar-list-item2">10</li>
           </Link>
-          <Link to="" style={{ textDecoration: "none" }}>
+          <Link to="/subscriptions" style={{ textDecoration: "none" }} className={currentRoute.includes("subscriptions") ? "navbar list a active " : "navbar list item"}>
             <li className="navbar-list-item">
               <AiOutlineThunderbolt className="navbar-list-logo" />
               Subscriptions
             </li>
           </Link>
-          <Link to="settings" style={{ textDecoration: "none" }}>
+          <Link to="/error" style={{ textDecoration: "none" }} className={currentRoute.includes("error") ? "navbar list a active " : "navbar list item"}>
             <li className="navbar-list-item">
               <CiSettings className="navbar-list-logo" />
               Settings
             </li>
           </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/playlists" style={{ textDecoration: "none" }} className={currentRoute.includes("playlists") ? "navbar list a active " : "navbar list item"} >
             <li className="navbar-list-item">
               <FiMusic className="navbar-list-logo" />
               Playlists
             </li>
           </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/albums" style={{ textDecoration: "none" }} className={currentRoute.includes("albums") ? "navbar list a active " : "navbar list item"}>
             <li className="navbar-list-item">
               <FaRegDotCircle className="navbar-list-logo" />
               Albums
             </li>
           </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/artists" style={{ textDecoration: "none" }} className={currentRoute.includes("artists") ? "navbar list a active " : "navbar list item"}>
             <li className="navbar-list-item">
               <img
                 src={imageArtist}
@@ -75,7 +74,7 @@ function Navbar() {
               Artists
             </li>
           </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/stations" style={{ textDecoration: "none" }} className={currentRoute.includes("stations") ? "navbar list a active " : "navbar list item"}>
             <li className="navbar-list-item">
               <img
                 src={imageStation}
@@ -85,7 +84,7 @@ function Navbar() {
               Stations
             </li>
           </Link>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/podcasts" style={{ textDecoration: "none" }} className={currentRoute.includes("podcasts") ? "navbar list a active " : "navbar list item"}>
             <li className="navbar-list-item">
               <GiOldMicrophone className="navbar-list-logo" />
               Podcasts
