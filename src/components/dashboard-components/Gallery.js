@@ -1,12 +1,16 @@
-import { useState } from "react";
 import "./Gallery.scss";
 
 function Gallery(props) {
-
-    console.log(props.data)
+  console.log(props.state);
   return (
     <section>
-      <div className="gallery-row">
+      <div
+        className={
+          props.state && props.state.includes("Disabled")
+            ? "gallery-row active"
+            : "gallery-row "
+        }
+      >
         {props.data.map((item) => {
           return (
             <ul className="gallery-items">

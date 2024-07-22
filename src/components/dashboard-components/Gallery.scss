@@ -1,6 +1,8 @@
 .gallery-row {
     margin-left: 40px;
-
+}
+.gallery-row.active{
+    display: none;
 }
 
 .gallery-items {
@@ -12,7 +14,7 @@
     background-color: #252A33;
     color: #eef2f6;
     border-radius: 10px;
-    padding: 12px 12px 0px 12px;
+    padding: 12px 12px 0px;
     margin-right: 20px;
 
     h3 {

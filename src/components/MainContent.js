@@ -5,12 +5,12 @@ import image2 from "../assets/images/abstract-image-2.png";
 import { BsArrowUpRight } from "react-icons/bs";
 import Slider from "./dashboard-components/Slider";
 import Gallery from "./dashboard-components/Gallery";
-import  { items } from "../assets/Api/ImagesFeatured"
+import  { itemsFeat } from "../assets/Api/ImagesFeatured"
 import { itemsCateg } from "../assets/Api/ImagesCategories";
 
 function MainContent() {
 
-  const [buttonState, setButtonState] = useState ()
+  const [buttonState, setButtonState] = useState ("All")
 
 
   return (
@@ -43,12 +43,12 @@ function MainContent() {
             <h2>Featured</h2>
           </div>
           <div className="button-main">
-            <button className="featured-button" value="All" onClick={(e)=>{setButtonState(e.target.value)}}>All</button>
-            <button className="featured-button" value="Premium" onClick={(e)=>{setButtonState(e.target.value)}}>Premium</button>
-            <button className="featured-button" value="Disabled" onClick={(e)=>{setButtonState(e.target.value)}}>Disabled</button>
+            <button className={buttonState.includes("All")? 'featured-button active' : 'featured-button'} value="All" onClick={(e)=>{setButtonState(e.target.value)}}>All</button>
+            <button className={buttonState.includes("Premium") ? 'featured-button active' : 'featured-button'} value="Premium" onClick={(e)=>{setButtonState(e.target.value)}}>Premium</button>
+            <button className={buttonState.includes("Disabled")? 'featured-button active' : 'featured-button'} value="Disabled" onClick={(e)=>{setButtonState(e.target.value)}}>Disabled</button>
           </div>
         </div>
-        <Gallery state={buttonState} data={items}/>
+        <Gallery state={buttonState} data={itemsFeat} />
         <div className="podcast-info">
           <div>
             <h2>Categories</h2>
@@ -56,7 +56,7 @@ function MainContent() {
           <div className="button-main">
           </div>
         </div>
-        <Gallery state={buttonState} data={itemsCateg}/>
+        <Gallery data={itemsCateg}  />
       </div>
     </div>
   );

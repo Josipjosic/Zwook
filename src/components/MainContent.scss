@@ -91,3 +91,7 @@
 .featured-button:hover {
   cursor: pointer;
 }
+.featured-button.active {
+  background-color: #FCFCFD;
+  color: #121926;
+}

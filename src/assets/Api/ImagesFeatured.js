@@ -7,7 +7,7 @@ import userImg6 from "../../assets/images/Orion Starlight.png";
 import userImg7 from "../../assets/images/Kiss Dorka 3.png";
 import userImg8 from "../../assets/images/Phantom Echos2.png";
 
-export const items = [
+export const itemsFeat = [
   {
     id: "0",
     name: "Kiss Dorka",
