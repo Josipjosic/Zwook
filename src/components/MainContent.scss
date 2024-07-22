@@ -3,6 +3,43 @@
   grid-row: 2 / 20;
   grid-column: 1 / 12;
 }
-.content-main {
- background-color: rgb(61, 61, 61);
+
+.content-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+
+  .content-image-info {
+    position: relative;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  .image-arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: #fcfcfd;
+    bottom: 90px;
+    left: 15px;
+  }
+
+  h2 {
+    position: absolute;
+    font-size: 36px;
+    color: #fcfcfd;
+    font-weight: 400;
+    bottom: 10px;
+    left: 15px;
+  }
+
+  p {
+    position: absolute;
+    font-size: 14px;
+    color: #fcfcfd;
+    bottom: 10px;
+    left: 15px;
+  }
 }

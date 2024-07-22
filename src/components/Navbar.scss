@@ -1,17 +1,11 @@
-
 .navbar-main {
-  position: fixed;
-  background-color: #252a33;
-  border-right: 1px solid #364152;
-  padding-left: 20px;
-  height: 100%;
-  width: 260px;
-
+  position: sticky;
+  top: 35px;
+  height: 100vh;
   .navbar-header {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin: 35px 0px 10px 0px;
 
     img {
       width: 45px;
@@ -46,9 +40,9 @@
     }
 
     .navbar-list a.active {
-        background-color: #3d4149;
-        border-radius: 10px;
-      }
+      background-color: #3d4149;
+      border-radius: 10px;
+    }
 
     .navbar-list-item {
       display: flex;
@@ -82,9 +76,9 @@
   }
 
   .navbar-footer {
-    width: 67%;
     position: absolute;
-    bottom: 10px;
+    bottom: 55px;
+    width: 67%;
     border-radius: 10px;
     padding: 10px 20px;
     border: 2px solid #364152;
@@ -128,11 +122,11 @@
       display: flex;
       color: #eef2f6;
 
-      h5{
+      h5 {
         font-weight: 300;
       }
 
-      .navbar-footer-text{
+      .navbar-footer-text {
         color: #efcc44;
         margin-left: 10px;
         font-weight: 300;
