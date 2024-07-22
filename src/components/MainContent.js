@@ -3,7 +3,7 @@ import "./MainContent.scss";
 import image1 from "../assets/images/abstract-image-1.png";
 import image2 from "../assets/images/abstract-image-2.png";
 import { BsArrowUpRight } from "react-icons/bs";
-import Podcast from "./dashboard-components/Podcast";
+import Slider from "./dashboard-components/Slider";
 
 function MainContent() {
   return (
@@ -23,9 +23,7 @@ function MainContent() {
             <img src={image2} alt="Placeholder"></img>
           </div>
         </section>
-        <Podcast />
-        <Podcast />
-        <Podcast />
+        <Slider />
       </div>
     </div>
   );

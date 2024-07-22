@@ -1,0 +1,135 @@
+.podcast-main {
+  color: #eef2f6;
+  width: 1600px;
+  position: relative;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 40px;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .podcast-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4a4d55;
+    width: 77px;
+    height: 36px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #eef2f6;
+    font-size: 14px;
+  }
+}
+
+.podcast-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.podcast-slider {
+  overflow: scroll;
+  width: 1638px;
+}
+
+.podcast-items {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0px 0px 0px 40px;
+  ul {
+    list-style-type: none;
+    padding: 20px 24px 0px 0px;
+    margin: 0px;
+  }
+
+  img {
+    width: 308px;
+    height: 180px;
+    border-radius: 10px;
+  }
+}
+
+
+.item-content {
+  display: flex;
+  position: relative;
+
+  .item-status {
+    display: flex;
+    position: absolute;
+    right: 12px;
+    background-color: #413f3acc;
+    border-radius: 20px;
+    width: 73px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+
+    > p {
+      font-size: 12px;
+      color: #17b26a;
+      font-weight: 500;
+    }
+
+    .item-status-icon {
+      width: 12px;
+      height: 12px;
+      background-color: #17b26a;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+  .item-status-icon.active {
+    width: 12px;
+    height: 12px;
+    background-color: #f04438;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .item-status-info.active{
+    color: #F04438;
+    font-weight: 500;
+  }
+
+  .item-info {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #413f3acc;
+  }
+  .item-info h3 {
+    padding-left: 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .item-info p {
+    display: flex;
+    padding: 4px 8px 4px 8px;
+    font-size: 10px;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #155eef;
+    width: 59px;
+    font-weight: 500;
+    height: 20px;
+    border-radius: 20px;
+    cursor: default;
+  }
+}
