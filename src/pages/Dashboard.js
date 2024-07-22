@@ -4,6 +4,7 @@ import SearchBar from "../components/Searchbar";
 import MainContent from "../components/MainContent";
 import Playbar from "../components/Playbar";
 
+
 function Dashboard() {
   return (
     <div className="dashboard">

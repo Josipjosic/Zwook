@@ -42,7 +42,7 @@ let podcastList = [
     userImg: userImg5,
   },
   {
-    id: "1",
+    id: "5",
     name: "Tech Talk",
     badge: "Premium",
     status: "Offline",
@@ -53,19 +53,13 @@ let podcastList = [
 function Slider() {
   return (
     <div className="podcast-main">
-      <div className="podcast-info">
-        <h2>Podcasts</h2>
-        <a href="/">
-          <div className="podcast-link">View All</div>
-        </a>
-      </div>
       <section className="podcast-slider">
         <div className="podcast-items">
           {podcastList.map((item) => {
             return (
-              <ul>
-                <li key={item.id}>
-                  <div className="item-content">
+              <ul key={item.id}>
+                <li >
+                  <div className="item-content" >
                     <a href="/">
                       <img src={item.userImg} alt="user-profile"></img>
                     </a>

@@ -1,0 +1,22 @@
+.gallery-row {
+    margin-left: 40px;
+
+}
+
+.gallery-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    list-style-type: none;
+    background-color: #252A33;
+    color: #eef2f6;
+    border-radius: 10px;
+    padding: 12px 12px 0px 12px;
+    margin-right: 20px;
+
+    h3 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
