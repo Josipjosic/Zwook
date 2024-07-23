@@ -1,7 +1,10 @@
+
 import "./Gallery.scss";
 
 function Gallery(props) {
-  console.log(props.state);
+
+
+  console.log(props.data);
   return (
     <section>
       <div

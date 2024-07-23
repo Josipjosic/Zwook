@@ -23,7 +23,7 @@ export const itemsFeat = [
   {
     id: "2",
     name: "Phantom Echos",
-    badge: "Premium",
+    badge: "Basic",
     userImg: userImg3,
   },
   {
@@ -35,7 +35,7 @@ export const itemsFeat = [
   {
     id: "4",
     name: "Max Sterling",
-    badge: "Premium",
+    badge: "Basic",
     userImg: userImg5,
   },
   {
@@ -47,7 +47,7 @@ export const itemsFeat = [
   {
     id: "6",
     name: "Kiss Dorka",
-    badge: "Premium",
+    badge: "Basic",
     userImg: userImg7,
   },
   {

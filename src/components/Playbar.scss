@@ -1,0 +1,131 @@
+.playbar-main {
+  display: flex;
+  border-top: 1px solid #252a33;
+  width: 100%;
+  height: 88px;
+  position: sticky;
+  align-items: center;
+  bottom: 0;
+  z-index: 1;
+  background-color: #252a33;
+  justify-content: space-between;
+  color: #eef2f6;
+}
+
+.playbar-artist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  padding: 8px 12px;
+
+  .playbar-artist-text {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #4a4d55;
+  }
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    color: #eef2f6;
+    padding-left: 8px;
+  }
+  p {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 0px 0px 0px 8px;
+    margin: 0px;
+    color: #9aa3b2;
+  }
+}
+
+.playbar-controls-main {
+  width: 416px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .playbar-control {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 32px;
+    width: 256px;
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  .playbar-status {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    .playbar-status-back {
+      height: 3px;
+      background-color: #364152;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .playbar-status-prog {
+      height: 3px;
+      background-color: #eef2f6;
+      width: 42%;
+      border-radius: 10px;
+    }
+    p {
+      font-size: 10px;
+      font-weight: 500;
+      color: #9aa3b2;
+      margin: 0px;
+      padding: 0px 10px 0px 10px;
+    }
+  }
+}
+
+.playbar-volume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 204px;
+  margin-right: 36px;
+
+  img {
+    padding-right: 12px;
+  }
+  img:hover {
+    cursor: pointer;
+  }
+
+  .playbar-volume-back {
+    height: 3px;
+    background-color: #364152;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .playbar-volume-prog {
+    height: 3px;
+    background-color: #eef2f6;
+    width: 70%;
+    border-radius: 10px;
+  }
+}
+.playbar-volume-prog:hover, .playbar-status-prog:hover {
+  cursor: pointer;
+}

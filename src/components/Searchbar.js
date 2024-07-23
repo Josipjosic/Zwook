@@ -11,7 +11,7 @@ function SearchBar() {
   var placeholder = "Search anything here";
 
   return (
-    <div className="searchbar-main">
+    <section className="searchbar-main">
       <section className="searchbar-section">
         <IconContext.Provider value={{ color: "#9aa3b2", size: "20px" }}>
           <IoSearchOutline />
@@ -45,7 +45,7 @@ function SearchBar() {
           </div>
         </div>
       </section>
-    </div>
+    </section>
   );
 }
 
