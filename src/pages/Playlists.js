@@ -9,7 +9,7 @@ function Playlists() {
   return (
     <div className="dashboard">
       <Navbar></Navbar>
-      <div className="dashboard-content">
+      <div>
         <SearchBar className="dashboard-search"></SearchBar>
         <div className="dashboard-playlist">
           <div className="playlist-featured">
@@ -37,12 +37,12 @@ function Playlists() {
               </tr>
             </tbody>
           </table>
-          {PlaylistItem.map((item) => {
+          {PlaylistItem.map((item, i) => {
             return (
               <table className="playlist-table">
                 <tbody>
                   <tr>
-                    <td style={{ width: "50px" }}></td>
+                    <td style={{ width: "50px" }}>{i}</td>
                     <td>
                       <div className="table-title-container">
                         <img src={item.userImg} alt="thumbnail"></img>

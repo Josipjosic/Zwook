@@ -1,0 +1,48 @@
+.podcast-main {
+  width: 1552px;
+  margin-inline: auto;
+
+  .podcast-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+
+    h2 {
+      padding: 0;
+      margin: 0;
+      font-weight: 500;
+      font-size: 30px;
+      color: #eef2f6;
+    }
+
+    button {
+      border: 1px solid #4a4d55;
+      border-radius: 10px;
+      padding: 12px 20px;
+      word-spacing: 8px;
+      border: none;
+      text-decoration: none;
+      margin-left: 12px;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    .button-cancel {
+      background-color: #0d121c;
+      color: #eef2f6;
+    }
+    .button-save {
+      background-color: #efcc44;
+      color: #0d121c;
+    }
+  }
+
+  .podcast-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

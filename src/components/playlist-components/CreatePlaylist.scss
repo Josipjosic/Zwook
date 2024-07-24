@@ -1,0 +1,77 @@
+.create-playlist-main {
+  width: 1043px;
+  background-color: #252a33;
+  border: 1px solid #364152;
+  border-radius: 10px;
+  margin-top: 36px;
+
+  .create-playlist-content {
+    padding: 24px;
+  }
+  .create-playlist-form {
+    h3 {
+      font-size: 14px;
+      font-weight: 400;
+      color: #eef2f6;
+      margin-bottom: 4px;
+    }
+
+    .form-wrapper {
+      width: 97.5%;
+      padding: 11px;
+      border: 1px solid #4a4d55;
+      border-radius: 10px;
+      input {
+        border-width: 0;
+        padding: 0;
+        margin: 0;
+        background-color: #252a33;
+        width: 100%;
+        outline: none;
+        color: #eef2f6;
+      }
+      input::placeholder {
+        color: #9aa3b2;
+        font-size: 14px;
+      }
+    }
+    .input-description {
+      resize: vertical;
+      height: 150px;
+    }
+  }
+  .create-playlist-check {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+
+    label {
+      padding-left: 8px;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: #eef2f6;
+    }
+    input[type="checkbox"] {
+      appearance: none;
+      height: 16px;
+      width: 16px;
+      background-color: #4a4d55;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="checkbox"]::after {
+      background-color: #252a33;
+      display: none;
+    }
+    input[type="checkbox"]:hover {
+      background-color: #364152;
+    }
+    input[type="checkbox"]:checked {
+      background-color: #efcc44;
+    }
+    input[type="checkbox"]:checked::after {
+      display: block;
+    }
+  }
+}

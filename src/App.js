@@ -1,9 +1,9 @@
 import "./App.scss";
 import Login from "./pages/Login";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Playlists from "./pages/Playlists";
-import Error from "./pages/Error";
+import Podcasts from "./pages/Podcasts";
 
 function App() {
   return (
@@ -21,11 +21,7 @@ function App() {
             path="playlists"
             element={<Playlists></Playlists>}
           ></Route>
-          <Route
-            exact
-            path="error"
-            element={<Error></Error>}
-          ></Route>
+          <Route exact path="podcasts" element={<Podcasts></Podcasts>}></Route>
         </Routes>
       </Router>
     </div>
